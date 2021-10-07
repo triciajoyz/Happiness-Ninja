@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Happiness Ninja</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <p>A Happy HTML-Ninja Who Compliments
+   Everyone Even
+   Those Who Do Bad Coding
+   Mohahahahahahaha</p <p>
+  <i>work in progress</i></p>
+  <h1>Step 1: Meet the Happiness Ninja:
+  </h1>
+  <img
+   src="https://triciascodes.neocities.org/happinessninja-welcome.gif"
+   height="400" width="250"><br>
+  <h1>Step 2: Repaint!</h1>
+  <button onclick="changeColor()">
+   <h1>Repaint the background!</h1>
+  </button><br>
+  <br><br><i><b>...click the button until
+    it's a color that makes you
+    happy!</b></i>
+  <script>
+   function getRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+     color += letters[Math.floor(Math
+      .random() * 16)];
+    }
+    return color;
+   }
+   
+   function changeColor() {
+    let newColor = getRandomColor();
+    document.body.style.backgroundColor =
+     newColor;
+   }
+  </script>
+  <br><br>
+  <h1>Step 3: Another button? Find out
+   what's whimsical about the button!
+  </h1>
+  <i>It seems that you have to
+   click the button <u>twice</u> for it
+   to work... What a stubborn button!
+   Click on it again to close the secret
+   box!</i>
+  <style>
+   #myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: purple;
+    margin-top: 20px;
+    display: none;
+    border: dashed;
+    box-shadow: 0 10px 10px 0 rgba(2, 2, 2, 2);
+   }
+   
+   button {
+    box-shadow: 0 10px 10px 0 rgba(2, 2, 2, 2);
+   }
+  </style>
+  <script>
+   function myFunction() {
+    var x = document.getElementById(
+     "myDIV");
+    if (x.style.display === "none") {
+     x.style.display = "block";
+    } else {
+     x.style.display = "none";
+    }
+   }
+  </script>
+  <h2><button onclick="myFunction()">The
+    most whimsical of us all</button>
+  </h2>
+  </div>
+  
+  <div id="myDIV">
+   The inner feeling<br>
+   In which they are hidden<br>
+   There’s no power of healing<br>
+   The things that are forbidden<br>
+   <br><br>
+   A little, tiny, very small<br>
+   Peeking through the wall<br>
+   Short, not very tall<br>
+   The most whimsical of us all<br>
+   <br><br>
+   Power we cannot see<br>
+   The ghastly things are up for a
+   walk<br>
+   The prisoners are we<br>
+   Suddenly we’re not able to talk<br>
+   <br><br>
+   A dried fiend,<br>
+   A false end,<br>
+   At least it can make us understand<br>
+   <br><br>
+   All the faces we won’t see<br>
+   All the places in which we cannot
+   be<br>
+   For all, we can’t make ourselves
+   free<br>
+  </div>
+  <br><br><br><br><br>
+  <script src="script.js"></script>
+ </body>
+</html>
